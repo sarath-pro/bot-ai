@@ -1,0 +1,13 @@
+.conversation {
+    background: linear-gradient(90deg, #BFACE2 0%, #D7C7F4 100%);
+    margin: 8px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: -4px 4px 15px 0px #0000001A;
+}
+
+.history {
+    width: 100%;
+    text-align: center;
+}

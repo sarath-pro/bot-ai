@@ -1,0 +1,19 @@
+* {
+  --primary-1: #9785BA;
+  --primary-2: #AF9FCD;
+  --primary-2: #F9FAFA;
+
+  --secondary-1: #D7C7F4;
+  --secondary-2: #FFFFFF;
+
+  --text-p1: #FFFFFF;
+  --text-p2: #AF9FCD;
+  --text-s1: #3C3C3C;
+  --text-s2: linear-gradient(180deg, #FFFFFF 0%, #9785BA 100%);
+}
+
+body {
+  font-family: 'Ubuntu', 'Open Sans';
+  /* height: 100vw; */
+  background: linear-gradient(180deg, rgba(215, 199, 244, 0.2) 0%, rgba(151, 133, 186, 0.2) 100%);
+}
