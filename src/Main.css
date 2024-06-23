@@ -1,14 +1,15 @@
 #bot-ai {
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 28px;
     font-weight: 700;
     line-height: 32.17px;
     text-align: left;
     color: var(--primary-1);
+    margin: 0px 16px;
 }
 
 #heading {
-    font-family: Ubuntu;
+    font-family: 'Ubuntu';
     font-size: 28px;
     font-weight: 500;
     line-height: 32.17px;
@@ -19,7 +20,6 @@
     width: 65.3px;
     height: 69px;
     gap: 0px;
-    opacity: 0px;
     border-radius: 40px;
 }
 
@@ -28,7 +28,7 @@
     box-shadow: 0px 4px 10px 0px #00000026;
     width: fit-content;
     padding: 8px 0px 24px 15px;
-    width: 514px;
+    width: 420px;
     border-radius: 5px;
 }
 
@@ -63,10 +63,6 @@
     display: flex;
     margin: 40px 15px 16px 15px;
     justify-content: space-around;
-    /* position: fixed;
-    bottom: 16px;
-    left: 16px;
-    width: 100%; */
 }
 
 .input-container input {
@@ -80,7 +76,6 @@
     gap: 0px;
     border: none;
     border-radius: 5px;
-    /* opacity: 0px; */
     background-color: var(--secondary-1);
 }
 
@@ -111,7 +106,6 @@
     left: 16.42px;
     gap: 0px;
     border-radius: 10px;
-    opacity: 0px;
     background-color: #D7C7F4;
     border: none;
     margin: 8px;
@@ -120,12 +114,12 @@
 .sidebar {
     width: fit-content;
     background-color: white;
-    height: 100vw;
 }
 
 .main {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
+    justify-content: stretch;
 }
 
 .content {
@@ -136,6 +130,15 @@
     display: none;
 }
 
+.cards-header {
+    margin: 64px 0;
+}
+
+@media screen and (min-width: 480px) {
+    .sidebar-2 {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .sidebar {
@@ -148,7 +151,6 @@
 
     .sidebar-2 {
         width: 100%;
-        height: 100%
     }
 
     .sidebar-2 .row {
@@ -162,9 +164,10 @@
         left: 16.42px;
         gap: 0px;
         border-radius: 10px;
-        opacity: 0px;
         background-color: #D7C7F4;
         border: none;
         margin: 8px;
     }
+
+   
 }

@@ -121,14 +121,13 @@ function Main() {
 
     return (
         <div className='main'>
-            <Sidebar cls={'sidebar'} handleHistory={handleHistory}/>
+            <Sidebar cls={'sidebar'} handleHistory={handleHistory} />
             {
-                showHistory ? (<History handleHistory={handleHistory}/>) : (
+                showHistory ? (<History handleHistory={handleHistory} />) : (
                     <div className='content'>
                         <div className='row'>
                             <img src='assets/hamburger.png' alt='menu' id='hamburger' onClick={handleHam} />
                             <p id='bot-ai'>Bot AI</p>
-
                         </div>
                         {
                             hamburger && <Sidebar cls={'sidebar-2'} handleHistory={handleHistory} />
@@ -137,8 +136,10 @@ function Main() {
                         {
                             conversations.length === 0 && (
                                 <>
-                                    <p id='heading'>How Can I Help You Today?</p>
-                                    <img className='ai-img' src='assets/ai.png' alt='ai' />
+                                    <div className='cards-header'>
+                                        <p id='heading'>How Can I Help You Today?</p>
+                                        <img className='ai-img' src='assets/ai.png' alt='ai' />
+                                    </div>
                                     <div className='card-container'>
                                         <div className='card'>
                                             <p className='card-que'>Hi, what is the weather</p>

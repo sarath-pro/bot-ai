@@ -10,7 +10,6 @@
     height: 240px;
     gap: 0px;
     border-radius: 10px;
-    opacity: 0px;
     padding: 16px;
     z-index: 100;
 }
@@ -31,7 +30,6 @@
     gap: 0px;
     border: none;
     border-radius: 5px;
-    opacity: 0px;
     background-color: #D7C7F4;
     font-family: Ubuntu;
     font-size: 20px;
